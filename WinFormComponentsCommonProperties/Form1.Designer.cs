@@ -30,8 +30,8 @@
         {
             this.targetButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.formSizeLabel = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.formSizeLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,16 +55,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controls";
             // 
-            // formSizeLabel
-            // 
-            this.formSizeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.formSizeLabel.AutoSize = true;
-            this.formSizeLabel.Location = new System.Drawing.Point(20, 530);
-            this.formSizeLabel.Name = "formSizeLabel";
-            this.formSizeLabel.Size = new System.Drawing.Size(35, 13);
-            this.formSizeLabel.TabIndex = 2;
-            this.formSizeLabel.Text = "label1";
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -80,6 +70,18 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(188, 21);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
+            // 
+            // formSizeLabel
+            // 
+            this.formSizeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.formSizeLabel.AutoSize = true;
+            this.formSizeLabel.Location = new System.Drawing.Point(20, 530);
+            this.formSizeLabel.Name = "formSizeLabel";
+            this.formSizeLabel.Size = new System.Drawing.Size(35, 13);
+            this.formSizeLabel.TabIndex = 2;
+            this.formSizeLabel.Text = "label1";
             // 
             // mainForm
             // 
