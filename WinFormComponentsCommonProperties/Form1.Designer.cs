@@ -32,6 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.formSizeLabel = new System.Windows.Forms.Label();
+            this.visibleButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.visibleButton);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Location = new System.Drawing.Point(570, 15);
             this.groupBox1.Name = "groupBox1";
@@ -71,7 +73,6 @@
             this.comboBox1.Size = new System.Drawing.Size(188, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // formSizeLabel
             // 
@@ -82,6 +83,16 @@
             this.formSizeLabel.Size = new System.Drawing.Size(35, 13);
             this.formSizeLabel.TabIndex = 2;
             this.formSizeLabel.Text = "label1";
+            // 
+            // visibleButton
+            // 
+            this.visibleButton.Location = new System.Drawing.Point(6, 96);
+            this.visibleButton.Name = "visibleButton";
+            this.visibleButton.Size = new System.Drawing.Size(188, 31);
+            this.visibleButton.TabIndex = 1;
+            this.visibleButton.Text = "Visible = True";
+            this.visibleButton.UseVisualStyleBackColor = true;
+            this.visibleButton.Click += new System.EventHandler(this.visibleButton_Click);
             // 
             // mainForm
             // 
@@ -108,6 +119,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label formSizeLabel;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button visibleButton;
     }
 }
 

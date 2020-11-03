@@ -25,11 +25,6 @@ namespace WinFormComponentsCommonProperties
             formSizeLabel.Text = $"Form Size: {this.Width}, {this.Height}";
         }
 
-        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (comboBox1.SelectedIndex)
@@ -57,6 +52,19 @@ namespace WinFormComponentsCommonProperties
                     break;
                 default:
                     break;
+            }
+        }
+
+        private void visibleButton_Click(object sender, EventArgs e)
+        {
+            if (targetButton.Visible)
+            {
+                targetButton.Visible = false;
+                visibleButton.Text = "Visible = False";
+            } else
+            {
+                targetButton.Visible = true;
+                visibleButton.Text = "Visible = True";
             }
         }
     }
