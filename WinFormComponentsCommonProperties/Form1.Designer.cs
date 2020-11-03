@@ -34,6 +34,7 @@
             this.formSizeLabel = new System.Windows.Forms.Label();
             this.visibleButton = new System.Windows.Forms.Button();
             this.enabledButton = new System.Windows.Forms.Button();
+            this.centerButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.centerButton);
             this.groupBox1.Controls.Add(this.enabledButton);
             this.groupBox1.Controls.Add(this.visibleButton);
             this.groupBox1.Controls.Add(this.comboBox1);
@@ -106,6 +108,16 @@
             this.enabledButton.UseVisualStyleBackColor = true;
             this.enabledButton.Click += new System.EventHandler(this.enabledButton_Click);
             // 
+            // centerButton
+            // 
+            this.centerButton.Location = new System.Drawing.Point(6, 201);
+            this.centerButton.Name = "centerButton";
+            this.centerButton.Size = new System.Drawing.Size(188, 30);
+            this.centerButton.TabIndex = 3;
+            this.centerButton.Text = "Center Target";
+            this.centerButton.UseVisualStyleBackColor = true;
+            this.centerButton.Click += new System.EventHandler(this.centerButton_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -133,6 +145,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button visibleButton;
         private System.Windows.Forms.Button enabledButton;
+        private System.Windows.Forms.Button centerButton;
     }
 }
 

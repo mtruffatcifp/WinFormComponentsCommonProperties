@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace WinFormComponentsCommonProperties
@@ -79,6 +80,15 @@ namespace WinFormComponentsCommonProperties
                 targetButton.Enabled = true;
                 enabledButton.Text = "Enabled = True";
             }
+        }
+
+        private void centerButton_Click(object sender, EventArgs e)
+        {
+            int x = (this.Width / 2) - 50;
+            int y = (this.Height / 2) - 50;
+            targetButton.Location = new Point(x, y);
+            targetButton.Text = "Target\nX = " + (x+50) +
+                "\nY = " + (y+50);
         }
     }
 }
