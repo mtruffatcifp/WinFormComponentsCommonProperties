@@ -67,5 +67,18 @@ namespace WinFormComponentsCommonProperties
                 visibleButton.Text = "Visible = True";
             }
         }
+
+        private void enabledButton_Click(object sender, EventArgs e)
+        {
+            if (targetButton.Enabled)
+            {
+                targetButton.Enabled = false;
+                enabledButton.Text = "Enabled = False";
+            } else
+            {
+                targetButton.Enabled = true;
+                enabledButton.Text = "Enabled = True";
+            }
+        }
     }
 }

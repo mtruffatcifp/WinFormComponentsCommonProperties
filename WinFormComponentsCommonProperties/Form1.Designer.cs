@@ -33,6 +33,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.formSizeLabel = new System.Windows.Forms.Label();
             this.visibleButton = new System.Windows.Forms.Button();
+            this.enabledButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +49,7 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.enabledButton);
             this.groupBox1.Controls.Add(this.visibleButton);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Location = new System.Drawing.Point(570, 15);
@@ -88,11 +90,21 @@
             // 
             this.visibleButton.Location = new System.Drawing.Point(6, 96);
             this.visibleButton.Name = "visibleButton";
-            this.visibleButton.Size = new System.Drawing.Size(188, 31);
+            this.visibleButton.Size = new System.Drawing.Size(188, 30);
             this.visibleButton.TabIndex = 1;
             this.visibleButton.Text = "Visible = True";
             this.visibleButton.UseVisualStyleBackColor = true;
             this.visibleButton.Click += new System.EventHandler(this.visibleButton_Click);
+            // 
+            // enabledButton
+            // 
+            this.enabledButton.Location = new System.Drawing.Point(6, 149);
+            this.enabledButton.Name = "enabledButton";
+            this.enabledButton.Size = new System.Drawing.Size(188, 30);
+            this.enabledButton.TabIndex = 2;
+            this.enabledButton.Text = "Enabled = True";
+            this.enabledButton.UseVisualStyleBackColor = true;
+            this.enabledButton.Click += new System.EventHandler(this.enabledButton_Click);
             // 
             // mainForm
             // 
@@ -120,6 +132,7 @@
         private System.Windows.Forms.Label formSizeLabel;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button visibleButton;
+        private System.Windows.Forms.Button enabledButton;
     }
 }
 
