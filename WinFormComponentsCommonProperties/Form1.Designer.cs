@@ -91,8 +91,9 @@
             // 
             this.formSizeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.formSizeLabel.AutoSize = true;
-            this.formSizeLabel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.formSizeLabel.BackColor = System.Drawing.Color.MidnightBlue;
             this.formSizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formSizeLabel.ForeColor = System.Drawing.Color.White;
             this.formSizeLabel.Location = new System.Drawing.Point(20, 530);
             this.formSizeLabel.Name = "formSizeLabel";
             this.formSizeLabel.Size = new System.Drawing.Size(51, 16);
