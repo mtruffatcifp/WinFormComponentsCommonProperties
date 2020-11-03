@@ -35,6 +35,10 @@
             this.visibleButton = new System.Windows.Forms.Button();
             this.enabledButton = new System.Windows.Forms.Button();
             this.centerButton = new System.Windows.Forms.Button();
+            this.upButton = new System.Windows.Forms.Button();
+            this.leftButton = new System.Windows.Forms.Button();
+            this.rightButton = new System.Windows.Forms.Button();
+            this.downButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,12 +48,17 @@
             this.targetButton.Name = "targetButton";
             this.targetButton.Size = new System.Drawing.Size(100, 100);
             this.targetButton.TabIndex = 0;
+            this.targetButton.TabStop = false;
             this.targetButton.Text = "Target\r\nX = 0\r\nY = 0\r\n";
             this.targetButton.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.downButton);
+            this.groupBox1.Controls.Add(this.rightButton);
+            this.groupBox1.Controls.Add(this.leftButton);
+            this.groupBox1.Controls.Add(this.upButton);
             this.groupBox1.Controls.Add(this.centerButton);
             this.groupBox1.Controls.Add(this.enabledButton);
             this.groupBox1.Controls.Add(this.visibleButton);
@@ -82,9 +91,11 @@
             // 
             this.formSizeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.formSizeLabel.AutoSize = true;
+            this.formSizeLabel.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.formSizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.formSizeLabel.Location = new System.Drawing.Point(20, 530);
             this.formSizeLabel.Name = "formSizeLabel";
-            this.formSizeLabel.Size = new System.Drawing.Size(35, 13);
+            this.formSizeLabel.Size = new System.Drawing.Size(51, 16);
             this.formSizeLabel.TabIndex = 2;
             this.formSizeLabel.Text = "label1";
             // 
@@ -118,6 +129,50 @@
             this.centerButton.UseVisualStyleBackColor = true;
             this.centerButton.Click += new System.EventHandler(this.centerButton_Click);
             // 
+            // upButton
+            // 
+            this.upButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upButton.Location = new System.Drawing.Point(76, 373);
+            this.upButton.Name = "upButton";
+            this.upButton.Size = new System.Drawing.Size(50, 50);
+            this.upButton.TabIndex = 4;
+            this.upButton.Text = "↑";
+            this.upButton.UseVisualStyleBackColor = true;
+            this.upButton.Click += new System.EventHandler(this.upButton_Click);
+            // 
+            // leftButton
+            // 
+            this.leftButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.leftButton.Location = new System.Drawing.Point(20, 429);
+            this.leftButton.Name = "leftButton";
+            this.leftButton.Size = new System.Drawing.Size(50, 50);
+            this.leftButton.TabIndex = 5;
+            this.leftButton.Text = "←";
+            this.leftButton.UseVisualStyleBackColor = true;
+            this.leftButton.Click += new System.EventHandler(this.leftButton_Click);
+            // 
+            // rightButton
+            // 
+            this.rightButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rightButton.Location = new System.Drawing.Point(132, 429);
+            this.rightButton.Name = "rightButton";
+            this.rightButton.Size = new System.Drawing.Size(50, 50);
+            this.rightButton.TabIndex = 7;
+            this.rightButton.Text = "→";
+            this.rightButton.UseVisualStyleBackColor = true;
+            this.rightButton.Click += new System.EventHandler(this.rightButton_Click);
+            // 
+            // downButton
+            // 
+            this.downButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.downButton.Location = new System.Drawing.Point(76, 429);
+            this.downButton.Name = "downButton";
+            this.downButton.Size = new System.Drawing.Size(50, 50);
+            this.downButton.TabIndex = 6;
+            this.downButton.Text = "↓";
+            this.downButton.UseVisualStyleBackColor = true;
+            this.downButton.Click += new System.EventHandler(this.downButton_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +201,10 @@
         private System.Windows.Forms.Button visibleButton;
         private System.Windows.Forms.Button enabledButton;
         private System.Windows.Forms.Button centerButton;
+        private System.Windows.Forms.Button downButton;
+        private System.Windows.Forms.Button rightButton;
+        private System.Windows.Forms.Button leftButton;
+        private System.Windows.Forms.Button upButton;
     }
 }
 

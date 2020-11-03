@@ -87,8 +87,31 @@ namespace WinFormComponentsCommonProperties
             int x = (this.Width / 2) - 50;
             int y = (this.Height / 2) - 50;
             targetButton.Location = new Point(x, y);
-            targetButton.Text = "Target\nX = " + (x+50) +
-                "\nY = " + (y+50);
+            targetButton.Text = "Target\nX = " + x + "\nY = " + y;
+        }
+
+        private void upButton_Click(object sender, EventArgs e)
+        {
+            targetButton.Top -= 5;
+            targetButton.Text = "Target\nX = " + targetButton.Location.X + "\nY = " + targetButton.Location.Y;
+        }
+
+        private void downButton_Click(object sender, EventArgs e)
+        {
+            targetButton.Top += 5;
+            targetButton.Text = "Target\nX = " + targetButton.Location.X + "\nY = " + targetButton.Location.Y;
+        }
+
+        private void leftButton_Click(object sender, EventArgs e)
+        {
+            targetButton.Left -= 5;
+            targetButton.Text = "Target\nX = " + targetButton.Location.X + "\nY = " + targetButton.Location.Y;
+        }
+
+        private void rightButton_Click(object sender, EventArgs e)
+        {
+            targetButton.Left += 5;
+            targetButton.Text = "Target\nX = " + targetButton.Location.X + "\nY = " + targetButton.Location.Y;
         }
     }
 }
